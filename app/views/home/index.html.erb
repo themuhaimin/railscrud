@@ -1,0 +1,17 @@
+<h1> Daftar Buku terbaru</h1>
+<table border="1">
+  <tr>
+    <td> ID </td>
+    <td> Judul Buku </td>
+    <td> Halaman</td>
+    <td> Deskripsi</td>
+  </tr>
+  <% @books.each do |b| %>
+  <tr>
+    <td> <%= b.id %> </td>
+    <td> <%= b.title %> </td>
+    <td> <%= b.page %> </td>
+    <td> <%= b.description %> </td>
+  </tr>
+  <% end %>
+</table>
