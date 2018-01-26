@@ -12,7 +12,10 @@
     <td> <%= b.title %> </td>
     <td> <%= b.page %> </td>
     <td> <%= b.description %> </td>
+    <td><%= link_to "Details", book_path(b) %></td>
+    <td><%= link_to "Edit", book_path(b) %></td>
+    <td><%= link_to "Hapus", book_path(b), method: :delete %></td>
   </tr>
   <% end %>
 </table>
-<a href="books">Tambah</a>
+<%= link_to "New Book", {controller:'books', action:'new'} %>
