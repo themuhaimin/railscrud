@@ -13,7 +13,7 @@
     <td> <%= b.page %> </td>
     <td> <%= b.description %> </td>
     <td><%= link_to "Details", book_path(b) %></td>
-    <td><%= link_to "Edit", book_path(b) %></td>
+    <td><%= link_to "Edit", edit_book_path(b) %></td>
     <td><%= link_to "Hapus", book_path(b), method: :delete %></td>
   </tr>
   <% end %>
