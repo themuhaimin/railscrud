@@ -13,7 +13,7 @@ group :production do
 gem 'pg', '~> 0.18'
 end
 group :development do
-gem 'pg', '~> 0.18'
+gem 'mysql2', '>= 0.3.18', '< 0.5'
 end
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
